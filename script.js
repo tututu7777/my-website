@@ -34,4 +34,8 @@ function draw(){const root=$('dialog-content');root.replaceChildren();if(screen=
 $('close').onclick=close;$('modal').onclick=e=>{if(e.target===$('modal'))close()};document.addEventListener('keydown',e=>{if(e.key==='Escape'&&screen)close()});$('share').onclick=async()=>{try{await navigator.clipboard.writeText(location.href);$('share').textContent='已复制'}catch{prompt('复制网页链接',location.href)}};
 addEventListener('scroll',()=>{const max=document.documentElement.scrollHeight-innerHeight;$('progress').style.width=(max?Math.min(100,scrollY/max*100):0)+'%'},{passive:true});
 try{const ts=Number(sessionStorage.getItem('super-ip-checkout-pending'));if(ts&&Date.now()-ts<86400000){sessionStorage.removeItem('super-ip-checkout-pending');addEventListener('load',()=>showContact('returned'))}}catch{}
-fetch('content.json',{cache:'no-store'}).then(r=>r.json()).then(v=>{data=v;render()}).catch(()=>{$('blocks').append(el('p','hint','页面内容暂时无法加载，请刷新重试。'))});
+async function loadContent(){
+  try { const response=await fetch(live+'/api/content',{cache:'no-store'}); if(!response.ok)throw new Error('live unavailable'); const result=await response.json(); if(!result.content?.blocks?.length)throw new Error('invalid live content'); return result.content; }
+  catch { const fallback=await fetch('content.json',{cache:'no-store'}); if(!fallback.ok)throw new Error('snapshot unavailable'); return fallback.json(); }
+}
+loadContent().then(v=>{data=v;render()}).catch(()=>{$('blocks').append(el('p','hint','页面内容暂时无法加载，请刷新重试。'))});
