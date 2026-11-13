@@ -1,0 +1,79 @@
+{
+  "title": "超级IP智能体",
+  "subtitle": "助力企业 AI 升级，赋能每一个人",
+  "updatedAt": "2026-11-13T07:09:52.026Z",
+  "blocks": [
+    {
+      "id": "vision",
+      "title": "真正的变化",
+      "caption": "一个岗位，带领 AI 军团作战",
+      "type": "image",
+      "src": "/assets/vision.webp",
+      "poster": "",
+      "visible": true
+    },
+    {
+      "id": "video-intro",
+      "title": "看见 AI 团队的力量",
+      "caption": "产品介绍 · 视频即将上线",
+      "type": "video",
+      "src": "",
+      "poster": "",
+      "visible": true
+    },
+    {
+      "id": "challenge",
+      "title": "突破流量困境",
+      "caption": "从内容工具，走向自己的 AI 新媒体部门",
+      "type": "image",
+      "src": "/assets/challenge.webp",
+      "poster": "",
+      "visible": true
+    },
+    {
+      "id": "workflow",
+      "title": "让增长形成闭环",
+      "caption": "1 人 + 5 大 AI 员工，串联内容生产全流程",
+      "type": "image",
+      "src": "/assets/workflow.webp",
+      "poster": "",
+      "visible": true
+    },
+    {
+      "id": "video-workflow",
+      "title": "从选题到成片，如何完成？",
+      "caption": "操作演示 · 视频即将上线",
+      "type": "video",
+      "src": "",
+      "poster": "",
+      "visible": true
+    },
+    {
+      "id": "precision",
+      "title": "精准生产，服务成交",
+      "caption": "懂行业、懂客户，也懂你的成交路径",
+      "type": "image",
+      "src": "/assets/precision.webp",
+      "poster": "",
+      "visible": true
+    },
+    {
+      "id": "video-case",
+      "title": "让应用场景更直观",
+      "caption": "场景展示 · 视频即将上线",
+      "type": "video",
+      "src": "",
+      "poster": "",
+      "visible": true
+    },
+    {
+      "id": "audience",
+      "title": "人人都是一人公司",
+      "caption": "为企业、团队与个人，开启更多可能",
+      "type": "image",
+      "src": "/assets/audience.webp",
+      "poster": "",
+      "visible": true
+    }
+  ]
+}
