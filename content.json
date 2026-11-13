@@ -1,7 +1,7 @@
 {
   "title": "超级IP智能体",
   "subtitle": "助力企业 AI 升级，赋能每一个人",
-  "updatedAt": "2026-11-13T07:09:52.026Z",
+  "updatedAt": "2026-11-13T08:20:12.244Z",
   "blocks": [
     {
       "id": "vision",
@@ -75,5 +75,24 @@
       "poster": "",
       "visible": true
     }
-  ]
+  ],
+  "conversion": {
+    "enabled": true,
+    "mode": "payment",
+    "amountCents": 2990,
+    "productName": "超级IP智能体 · 试用体验",
+    "productDescription": "体验 AI 新媒体内容创作，添加微信了解使用方式。",
+    "payButtonText": "购买试用",
+    "wechatButtonText": "添加微信",
+    "showWechatShortcut": true,
+    "paymentMethod": "qrcode",
+    "checkoutUrl": "",
+    "paymentQrImage": "/api/media?id=b43e61da-4cfa-4dc0-9207-0d9a737b0a85.jpg",
+    "qrImage": "/api/media?id=150b417e-a45b-4804-9d90-a463be137ab6.jpg",
+    "contactName": "艳姐",
+    "wechatId": "",
+    "contactDescription": "添加微信，了解产品与试用详情。",
+    "returnDescription": "如已付款，请将支付凭证发给顾问核对，获取后续服务。未付款也可先咨询。",
+    "cancelDescription": "没关系，先添加微信，了解清楚再决定。"
+  }
 }
